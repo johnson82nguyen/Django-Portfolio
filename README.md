@@ -22,7 +22,7 @@ $ source venv/bin/activate
 
 This will create your virtual environment, and allow you to develope your web application.
 
-##To start your first Django application 
+## To start your first Django application 
 
 Python manage.py runserver Python manage.py startalp "new application name" I.e hello_world
 
