@@ -35,7 +35,7 @@ This will create your virtual environment, and allow you to develope your web ap
 
 To start your first Django application, you need to run the server. Since Django Framework uses python, you use the following command.
 ```bash
-Python manage.py runserver 
+python manage.py runserver 
 ```
 
 What this line does is it runs the server. If you check local:host8000 you should have a server running. However, You shouldn't be able to see anything because the server isn't connecting to any applications yet.
@@ -43,18 +43,34 @@ What this line does is it runs the server. If you check local:host8000 you shoul
 To start your first Django application you run the following command.
 
 ```bash
-Python manage.py startapp "new application name" 
+python manage.py startapp "new application name" 
 ```
 
 This creates a directory with the new application name.
 
 
 
-1.Once u create an app, u need to add it in settings.py in installed_apps 2. After that, you need to create a views function. I.e
+1. Once u create an app, you will need to add it in settings.py
+2. This settings.py file will be location in your newly created application directory
+3. There will be a function called installed_apps within your settings.py file
+4. In installed apps, you just add the name of your newly created app. A little something like this
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'new application name'
+]
+6. 2. After that, you need to create a views function. I.e
 
 from django.shortcuts import render
 
-def hello_world(request): return render(request, 'hello_world.html', {})
+def hello_world(request): 
+
+return render(request, 'hello_world.html', {})
 
 Need to make an HTML template to display to the user. render() looks for HTML templates inside directory called templates inside app directory.
 i.e mkdir hello_world/templates/ touch hello_world/templates/hello_world.html
