@@ -4,9 +4,9 @@ https://tranquil-garden-02710.herokuapp.com/landing_page/
 ## Installing Django
 
 First off if you want to run a Django application, you need to install Django. To do so, you run the following command,
-'''bash
+```bash
 python -m pip install Django
-'''
+```
 python3 -m venv venv $ source venv/bin/activate
 
 Python manage.py runserver Python manage.py startalp "new application name" I.e hello_world
