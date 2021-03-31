@@ -7,7 +7,13 @@ First off if you want to run a Django application, you need to install Django. T
 ```bash
 python -m pip install Django
 ```
-python3 -m venv venv $ source venv/bin/activate
+
+You will now have Django installed onto your device. This will give you access to django applications. Now once you have django on your system, let's create a virtual environment.
+
+To do so, run the following commands
+```bashpython3 -m venv venv 
+source venv/bin/activate
+```
 
 Python manage.py runserver Python manage.py startalp "new application name" I.e hello_world
 
