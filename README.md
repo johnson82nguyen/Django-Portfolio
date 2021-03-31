@@ -51,10 +51,15 @@ This creates a directory with the new application name.
 
 
 1. Once u create an app, you will need to add it in settings.py
+
 2. This settings.py file will be location in your newly created application directory
+
 3. There will be a function called installed_apps within your settings.py file
+
 4. In installed apps, you just add the name of your newly created app. A little something like this
 
+
+```bash
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -64,6 +69,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'new application name'
 ]
+```
+
+
 6. 2. After that, you need to create a views function. I.e
 
 from django.shortcuts import render
