@@ -1,5 +1,14 @@
 # personal website
-https://tranquil-garden-02710.herokuapp.com/landing_page/
+
+This is my django website that I hosted on Heroku. This is the domain that is hosting my website. 
+
+www.johnson-nguyen.com
+
+## The purpose of this Repository
+
+The purpose of this repository isn't to give you my functioning website. I didn't put the entireity of my source code into this repository, but I put a lot of it in. This is to show you the base steps to start your own personal Django application if you are ever feel like starting one. 
+
+
 
 ## Installing Django
 
