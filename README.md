@@ -126,7 +126,7 @@ This goes into your application directory and creates a urls.py file.
 Add the following to urls.py in your new_applications_name directory
 
 ```bash
-from django.urls import path from hello_world import views
+from django.urls import path from new_application_name import views
 
 urlpatterns = [ path('', views.new_application_name, name='new_application_name'), ]
 ```
@@ -134,4 +134,9 @@ urlpatterns = [ path('', views.new_application_name, name='new_application_name'
 Now when you run localhost:8000 You should see whatever you added in the HTML file.
 
 ## Conclusion
+
+In conclusion, these are the basic steps you need to follow in order to get your Django applications up and running for yourself.
+This isn't an in depth guide to show you how everything works in django as I've just started learning Django myself recently.
+Ever time you want to create a new application to add to your project, just follow these steps and you're good to go :)
+Hopefully this has helped you!
 
