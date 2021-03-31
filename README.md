@@ -11,7 +11,10 @@ python -m pip install Django
 You will now have Django installed onto your device. This will give you access to django applications. Now once you have django on your system, let's create a virtual environment.
 
 To do so, run the following commands
-```bashpython3 -m venv venv 
+```bash
+python3 -m venv venv 
+```
+```
 source venv/bin/activate
 ```
 
