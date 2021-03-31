@@ -67,42 +67,71 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    **'new application name'**
+    'new application name'
 ]
 ```
 
-
-6. 2. After that, you need to create a views function. I.e
-
+ After that, you need to create a views function.
+ A views function will take a request and display it to the server.
+ If the request is valid, then you should be able to see your website when you test out local:host8000
+ 
+ To add to your views function, copy the following code 
+ 
+ 
+```bash
 from django.shortcuts import render
 
-def hello_world(request): 
+def new_application_name(request): 
 
-return render(request, 'hello_world.html', {})
+return render(request, 'new_application_name.html', {})
+```
 
-Need to make an HTML template to display to the user. render() looks for HTML templates inside directory called templates inside app directory.
-i.e mkdir hello_world/templates/ touch hello_world/templates/hello_world.html
+This will make a request to your 'new_application_name.html' file and display it on local host. 
 
-4.To hookup to the url, u need to visit urls.py and add the following lines to display to the server,
+```bash
+The render() looks for html templates inside the directory called templates inside the app directory.
+```
 
-From django.urls import path, include path('',include('hello_world.urls')),
+However, this won't display anything yet since we haven't created a new_application_name.html file.
+
+To do this we can use some linux commands to make a folder and a html file.
+
+```bash
+mkdir new_application_name/templates/
+```
+This will make a new directory, and another directory within new_application_name
+
+Now we want to make the html file. To do so, you can run
+
+```bash
+touch new_application_name.html
+```
+There is one more step we need to do. 
+So far we installed the app, added it into our settings, and also created a view for it to display. One more thing we need to do is hook it up to a url. This will allow us to display to the server. The views only displays to the user, but this will display to the server.
+
+To hookup to the url, You need to visit urls.py and add the following lines to display to the server,
+
+```bash
+From django.urls import path, include path('',include('new_application_name.urls')),
+```
 
 The urls.py doesn't exist in hello_world yet so we'll create it.
-Touch hello_world/urls.py
 
-And add the following to urls.py in your hello_world directory
+```bash
+Touch new_application_name/urls.py
+```
+This goes into your application directory and creates a urls.py file.
 
+
+Add the following to urls.py in your new_applications_name directory
+
+```bash
 from django.urls import path from hello_world import views
 
-urlpatterns = [ path('', views.hello_world, name='hello_world'), ]
+urlpatterns = [ path('', views.new_application_name, name='new_application_name'), ]
+```
 
-Now when u run localhost:8000 u should see "hello, world" or whatever you added in the HTML file.
+Now when you run localhost:8000 You should see whatever you added in the HTML file.
 
-This is for adding bootstrap. Go to personal_portfolio/templates/ And make a base.html file This should be where your CSS is.
-Add
+## Conclusion
 
-{% block page_content %}{% endblock %}
-
-To ur base.html file
-
-sets virtual environment to run website
