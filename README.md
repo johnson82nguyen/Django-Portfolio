@@ -3,12 +3,13 @@ https://tranquil-garden-02710.herokuapp.com/landing_page/
 
 ## Installing Django
 
-First off if you want to run a Django application, you need to install Django. To do so, you run the following command,
+First off if you want to run a Django application, you need to install Django. To do so, you run the following command in your terminal
+
 ```bash
 python -m pip install Django
 ```
 
-You will now have Django installed onto your device. This will give you access to django applications. Now once you have django on your system, let's create a virtual environment.
+You will now have Django installed onto your device. This will give you access to django packages. Now once you have django modules on your system, let's create a virtual environment.
 
 To do so, run the following commands in your command line
 ```bash
@@ -18,6 +19,10 @@ and
 ```
 $ source venv/bin/activate
 ```
+
+This will create your virtual environment, and allow you to develope your web application.
+
+##To start your first Django application 
 
 Python manage.py runserver Python manage.py startalp "new application name" I.e hello_world
 
