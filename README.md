@@ -50,7 +50,7 @@ This creates a directory with the new application name.
 
 
 
-1. Once u create an app, you will need to add it in settings.py
+1. Once you create an app, you will need to add it in settings.py
 
 2. This settings.py file will be location in your newly created application directory
 
@@ -67,7 +67,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'new application name'
+    'new application name'       <------
 ]
 ```
 
