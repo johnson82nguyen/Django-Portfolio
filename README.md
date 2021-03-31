@@ -1,4 +1,4 @@
-# personal website
+# Personal website
 
 This is my django website that I hosted on Heroku. This is the domain that is hosting my website. 
 
@@ -6,7 +6,7 @@ www.johnson-nguyen.com
 
 ## The purpose of this Repository
 
-The purpose of this repository isn't to give you my functioning website. I didn't put the entireity of my source code into this repository, but I put a lot of it in. This is to show you the base steps to start your own personal Django application if you are ever feel like starting one. 
+The purpose of this repository isn't to give you my functioning website. I didn't put the entireity of my source code into this repository just because I don't want a mere copy but I put a lot of it in. This is to show you the base steps to start your own personal Django application if you are ever feel like starting one. 
 
 
 
@@ -18,7 +18,7 @@ First off if you want to run a Django application, you need to install Django. T
 python -m pip install Django
 ```
 
-You will now have Django installed onto your device. This will give you access to django packages. Now once you have django modules on your system, let's create a virtual environment.
+You will now have Django installed onto your device. This will give you access to django packages. Now once you have django on your system, let's create a virtual environment.
 
 To do so, run the following commands in your command line
 ```bash
@@ -33,7 +33,22 @@ This will create your virtual environment, and allow you to develope your web ap
 
 ## To start your first Django application 
 
-Python manage.py runserver Python manage.py startalp "new application name" I.e hello_world
+To start your first Django application, you need to run the server. Since Django Framework uses python, you use the following command.
+```bash
+Python manage.py runserver 
+```
+
+What this line does is it runs the server. If you check local:host8000 you should have a server running. However, You shouldn't be able to see anything because the server isn't connecting to any applications yet.
+
+To start your first Django application you run the following command.
+
+```bash
+Python manage.py startapp "new application name" 
+```
+
+This creates a directory with the new application name.
+
+
 
 1.Once u create an app, u need to add it in settings.py in installed_apps 2. After that, you need to create a views function. I.e
 
