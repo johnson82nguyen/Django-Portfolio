@@ -115,10 +115,10 @@ To hookup to the url, You need to visit urls.py and add the following lines to d
 From django.urls import path, include path('',include('new_application_name.urls')),
 ```
 
-The urls.py doesn't exist in hello_world yet so we'll create it.
+The urls.py doesn't exist in new_application_name yet so we'll create it.
 
 ```bash
-Touch new_application_name/urls.py
+touch new_application_name/urls.py
 ```
 This goes into your application directory and creates a urls.py file.
 
