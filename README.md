@@ -2,7 +2,7 @@
 
 This is my django website that I hosted on Heroku. This is the domain that is hosting my website. 
 
-www.johnson-nguyen.com
+www.johnson-nguyen.com (DEPRICATED)
 
 ## The purpose of this Repository
 
